@@ -1,12 +1,21 @@
 import "./Landing.scss";
-import { useState } from "react";
-import { ParallaxBanner } from "react-scroll-parallax";
-import ParallaxComponent from "./ParallaxComponent";
+import { useEffect, useState } from "react";
 import { images } from "../../constants";
 import { landingParallax } from "./ParallaxComponent";
+import { motion } from "framer-motion";
+import { SubmitBtn } from "../../components";
 
 const Landing = () => {
   document.addEventListener("scroll", landingParallax);
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() =>{
+    if(showModal){
+      document.querySelector('body').style.overflow = 'hidden';
+    }else {
+      document.querySelector('body').style.overflow = 'auto';
+    }
+  }, [showModal])
 
   return (
     <div className="app__landing">
@@ -22,6 +31,7 @@ const Landing = () => {
           />
         </div>
       </div>
+      <div className="landing-bg-wrapper">
 
       <div className="landing-bg mountain-bg">
         <img
@@ -29,6 +39,7 @@ const Landing = () => {
           src={images.mountainBg}
           alt="landing bg-img"
         />
+      </div>
       </div>
 
       <div className="app__landing-wrapper">
@@ -42,31 +53,32 @@ const Landing = () => {
                 </h1>
                 <p>Har qanday murakkablidagi</p>
               </div>
-              <div className="app__landing-links">
-                <a href="">
-                  Brif to'ldirish
-                  <span>
-                    <i className="bi bi-arrow-right-short"></i>
-                  </span>
-                </a>
-                <a href="">
-                  Qo'ng'iroq
-                  <span>
-                    <i className="bi bi-telephone-fill"></i>
-                  </span>
-                </a>
-              </div>
+            
+
+<SubmitBtn link={'/'} />
+
+
             </div>
-            {/* <div className="landing-bg brand-bg">
-              <img
-                className="brand-img"
-                src={images.brandBg}
-                alt="landing bg-img"
-              />
-            </div> */}
           </div>
         </div>
       </div>
+
+      <div className="play-video video-parralax" onClick={() => setShowModal(true)}>
+       <span>
+       </span>
+        <i className="bi bi-play-fill"></i>
+      </div>
+     {showModal && (
+       <>
+       < motion.div whileInView={{opacity: [0,1]}} className="modal-bg" onClick={() => setShowModal(false)}></motion.div>
+       <motion.div whileInView={{opacity: [0,1], transition: {delay: 0.5}}} className="app__landing-video">
+         <span onClick={() => setShowModal(false)}><i className="bi bi-x-lg"></i></span>
+         <div className="landing-video">
+           <iframe src="https://www.youtube.com/embed/1vx_W6o_t68" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+         </div>
+       </motion.div>
+       </>
+     )}
     </div>
   );
 };

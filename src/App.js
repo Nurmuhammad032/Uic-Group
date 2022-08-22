@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components";
 import { About, Landing } from "./containers";
+import AboutImgs from "./containers/About/AboutImgs";
 
 function App() {
   return (

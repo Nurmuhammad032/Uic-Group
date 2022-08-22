@@ -1,16 +1,37 @@
 import "./Navbar.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BrandSvg from "./BrandSvg";
 import Menu from "./Menu/Menu";
 
 const Navbar = () => {
   const [hover, setHover] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const [navChange, setNavChange] = useState(false);
+
+  document.addEventListener('scroll', () => {
+    if(window.scrollY > 140){
+      setNavChange(true)
+    } else {
+      setNavChange(false)
+    }
+  })
+
+  useEffect(() =>{
+    if(openMenu){
+      document.querySelector('body').style.overflow = 'hidden';
+    }else {
+      document.querySelector('body').style.overflow = 'auto';
+    }
+  }, [openMenu])
 
   return (
-    <nav className="app__navbar">
+    <nav className="app__navbar" style={{
+      backgroundColor: `${navChange ? 'rgba(30,30,32,.95)' : 'transparent'}`,
+    }}>
       <div className="container">
-        <div className="app__navbar-wrapper">
+        <div className="app__navbar-wrapper" style={{
+          height: `${navChange ? '9rem' : '12rem'}`
+        }}>
           <div
             className="app__navbar-hamburger"
             onClick={() => setOpenMenu((prev) => !prev)}
