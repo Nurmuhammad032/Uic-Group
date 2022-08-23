@@ -1,0 +1,203 @@
+{
+  "portfolio": {
+    "data": [
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": true,
+        "name": "Mening Konstitutsiyam",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Youtube_cover_image.png",
+        "url": "https://meningkonstitutsiyam.uz"
+      },
+      {
+        "type": "brend",
+        "category": 3,
+        "layoutBig": false,
+        "name": "Toshkent davlat agrar universiteti",
+        "typeName": "brending",
+        "imgUrl": "https://uic.group/media/Portfolio/TDAU.png",
+        "url": "https://tdau.uz"
+      },
+      {
+        "type": "brend",
+        "category": 3,
+        "layoutBig": false,
+        "name": "Toshkent davlat sharqshunoslik universiteti",
+        "typeName": "brending",
+        "imgUrl": "https://uic.group/media/Portfolio/tsuos2.png",
+        "url": "https://tsuos.uz"
+      },
+      {
+        "type": "brend",
+        "category": 3,
+        "layoutBig": false,
+        "name": "O'zsuvta'minot",
+        "typeName": "brending",
+        "imgUrl": "https://uic.group/media/Portfolio/uzsuv2.png",
+        "url": "https://uzsuv.uz/uz"
+      },
+      {
+        "type": "brend",
+        "category": 3,
+        "layoutBig": false,
+        "name": "100ideas.uz",
+        "typeName": "brending",
+        "imgUrl": "https://uic.group/media/Portfolio/100ideas.png",
+        "url": "https://100ideas.uz/uz"
+      },
+      {
+        "type": "brend",
+        "category": 3,
+        "layoutBig": false,
+        "name": "Abdulla Avloniy",
+        "typeName": "brending",
+        "imgUrl": "https://uic.group/media/Portfolio/Frame_21224.png",
+        "url": "https://onlinedu.uz"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": true,
+        "name": "Yashnobod texnopark",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Yashnobod_texnopark.png",
+        "url": "https://yait.uz"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": false,
+        "name": "UzSuv waterlab",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Uzsuv_Waterlab.png",
+        "url": "https://uzsuv.uz/uz"
+      },
+      {
+        "type": "brend-web",
+        "category": 3,
+        "layoutBig": false,
+        "name": "KitobPlus",
+        "typeName": "brending veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/KitopPlus.png",
+        "url": "https://kitobplus.uz/"
+      },
+      {
+        "type": "mobile-program",
+        "category": 1,
+        "layoutBig": false,
+        "name": "Go'zal ismlar",
+        "typeName": "mobil ilovalar",
+        "imgUrl": "https://uic.group/media/Portfolio/Guzal_ismlar.png",
+        "url": "https://apps.apple.com/tt/app/go-zal-ismlar/id1604318410"
+      },
+      {
+        "type": "mobile-program",
+        "category": 1,
+        "layoutBig": false,
+        "name": "Obod system",
+        "typeName": "mobil ilovalar",
+        "imgUrl": "https://uic.group/media/Portfolio/Obod_system.png",
+        "url": "https://suvniasra.uz/uz"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": false,
+        "name": "Vacancy.argos.uz",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/vacancyargos.png",
+        "url": "https://vacancy.argos.uz/"
+      },
+      {
+        "type": "brend-web",
+        "category": 3,
+        "layoutBig": true,
+        "name": "Vacancy.argos.uz",
+        "typeName": "brending veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Lenta.png",
+        "url": "https://lenta.uz/"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": true,
+        "name": "UVA",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/UVA.png",
+        "url": "https://volontyor.uz/"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": true,
+        "name": "Ricomel",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Ricomel.png",
+        "url": "https://ricomel.com/"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": true,
+        "name": "UzSuv",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Uzsuv.png",
+        "url": "https://uzsuv.uz/"
+      },
+      {
+        "type": "brend-web",
+        "category": 3,
+        "layoutBig": false,
+        "name": "ISEF",
+        "typeName": "brending veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/ISFF.png",
+        "url": "https://uzsuv.uz/"
+      },
+      {
+        "type": "web-site",
+        "category": 2,
+        "layoutBig": false,
+        "name": "Sergeli tuman hokimiyati",
+        "typeName": "veb-saytlar",
+        "imgUrl": "https://uic.group/media/Portfolio/Sergeli_tuman_hokimiyati.png",
+        "url": "https://sergelihokimiyati.uz/uz"
+      }
+    ]
+  },
+
+  "services": {
+    "data": [
+      {
+        "id": "web",
+        "name": "Veb-saytlar",
+        "description": "Korporativ veb saytlardan tortib veb ilovalargacha boʻlgan murakkablikdagi internet saytlarni sifat kafolati bilan ishlab chiqamiz"
+      },
+      {
+        "id": "ux-design",
+        "name": "UI&UX dizayn",
+        "description": "Loyiha MindMapʼini ishlab chiqish va ushbu arxitektura asosida optimal yechimga ega dizaynlarni chizish"
+      },
+      {
+        "id": "Crm",
+        "name": "CRM tizimlar",
+        "description": "Biznesni va jarayonlarni avtomatlashtirish, kanselyariya ishlarini 100% gacha kamaytiruvchi boshqaruv elektron tizimlarini ishlab chiqish"
+      },
+      {
+        "id": "mobile",
+        "name": "Mobil ilovalar",
+        "description": "Istalgan qiyinchilikdagi mobil ilovalarni ishlab chiqish va ularni texnik qo'llab-quvvatlash"
+      },
+      {
+        "id": "media",
+        "name": "Media production",
+        "description": "2D/3D animatsiya, loyiha taqdimoti, reklamasi, videomateriallar va boshqa media resurslarni professional tarzida tayyorlash"
+      },
+      {
+        "id": "logo",
+        "name": "Logo va brending",
+        "description": "Loyihangiz uchun yagona va oʻziga xos boʻlgan logotipni ishlab chiqish va uni brending qoidalarini ham yaratib berish"
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+.app__contact {
+  position: relative;
+  // padding: 5rem 0 19rem;
+  background-color: var(--green-color);
+
+  .app__contact-header {
+    text-align: center;
+
+    p {
+      color: var(--gray-color);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 1rem;
+    }
+  }
+
+  .app__contact-desc {
+    text-align: center;
+    padding: 1rem 0 10rem;
+
+    .background-desc {
+      user-select: none;
+      position: relative;
+      font-size: 13vw;
+      font-weight: bolder;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0.1rem;
+      -webkit-text-stroke-color: hsla(0, 0%, 100%, 0.1);
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 8vw;
+        -webkit-text-fill-color: #fff !important;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 10rem;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 18rem;
+      }
+    }
+  }
+
+  form {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: #252527;
+
+    label {
+      display: block;
+      color: #fff;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      color: #fff;
+      font-size: 1.5rem;
+      background-color: #141415;
+      padding: 1.3rem;
+      border-right: 2px solid #252527;
+      border-radius: 0.7rem 0 0 0.7rem;
+    }
+
+    // Second input border fix
+    .form-input:nth-child(2) {
+      input {
+        border-radius: 0;
+        border-radius: 0 0.7rem 0.7rem 0;
+      }
+    }
+
+    input {
+      width: 40rem;
+      background-color: #141415;
+      border: none;
+      padding: 1.5rem;
+      border-radius: 0.7rem;
+      color: #fff;
+      font-size: 1.5rem;
+
+      &::placeholder {
+        font-size: 1.5rem;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+    button{
+      font-size: 1.7rem;
+      padding: 2rem;
+      color: #fff;
+      background-color: var(--green-color);
+      border: none;
+      border-radius: 1.4rem;
+    } 
+  }
+
+}

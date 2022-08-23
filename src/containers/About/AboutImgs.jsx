@@ -14,16 +14,20 @@ const AboutImgs = ({ images, view }) => {
     slidesToScroll: 1,
   };
   return (
-    <div style={{
-      display: `${view ? 'block' : 'none'}`
-    }}>
-      <Slider {...settings}>
-        {images.map((img, i) => (
-          <div key={i}>
-            <img src={img} alt="About carousel img" />
-          </div>
-        ))}
-      </Slider>
+    <div
+      style={{
+        display: `${view ? "block" : "none"}`,
+      }}
+    >
+      {images.length > 0 && (
+        <Slider {...settings}>
+          {images.map((img, i) => (
+            <div key={i}>
+              <img src={img} alt="About carousel img" />
+            </div>
+          ))}
+        </Slider>
+      )}
     </div>
   );
 };

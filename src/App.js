@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components";
-import { About, Landing } from "./containers";
-import AboutImgs from "./containers/About/AboutImgs";
+import { About, Contact, Landing, Portfolio, Services } from "./containers";
 
 function App() {
   return (
@@ -15,6 +14,9 @@ function App() {
             <>
               <Landing />
               <About />
+              <Portfolio />
+              <Services />
+              <Contact />
             </>
           }
         />

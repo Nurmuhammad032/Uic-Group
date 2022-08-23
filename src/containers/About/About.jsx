@@ -3,6 +3,7 @@ import "./About.scss";
 import AboutImgs from "./AboutImgs";
 import { images } from "../../constants";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const imgFirst = [images.about_1_1, images.about_1_2, images.about_1_3];
 const imgSecond = [images.about_2_1, images.about_2_2];
@@ -18,13 +19,13 @@ const About = () => {
     }
   };
 
-  useEffect(() => {
+  useEffect(() => { 
     if (firstViewSlider || secondViewSlider) {
-      document.querySelector('body').style.overflow = 'hidden'
-    }else {
-      document.querySelector('body').style.overflow = 'auto'
+      document.querySelector("body").style.overflow = "hidden";
+    } else {
+      document.querySelector("body").style.overflow = "auto";
     }
-  }, [firstViewSlider, secondViewSlider])
+  }, [firstViewSlider, secondViewSlider]);
 
   return (
     <div className="app__about">
@@ -41,7 +42,9 @@ const About = () => {
         <div className="app__about-wrapper">
           <div className="app__about-images">
             <div>
-              <div
+              <motion.div
+                whileInView={{ y: [-80, 0], opacity: [0, 1] }}
+                transition={{ delay: 0.4, duration: 0.4 }}
                 className="app__about-img"
                 onClick={() => setFirstViewSlider(true)}
               >
@@ -51,7 +54,7 @@ const About = () => {
                   className="expand-icon"
                 />
                 <img src={images.about_1_1} alt="About img" />
-              </div>
+              </motion.div>
               <div className="app__about-imgText">
                 <h1>10</h1>
                 <h3>
@@ -59,22 +62,35 @@ const About = () => {
                 </h3>
               </div>
             </div>
-            <div
+            <motion.div
+              whileInView={{ y: [80, 0], opacity: [0, 1] }}
+              transition={{ delay: 0.4, duration: 0.4 }}
               className="app__about-img"
               onClick={() => setSecondViewSlider(true)}
             >
               <img src={images.expandIcon} alt="icon" className="expand-icon" />
               <img src={images.about_2_1} alt="About img" />
-            </div>
+            </motion.div>
           </div>
           <div className="app__about-desc">
-            <div className="about__desc-header">
+            <motion.div
+              whileInView={{ x: [70, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.3 }}
+              className="about__desc-header"
+            >
               <span></span>
               <h3>Bir so'z bilan aytganda</h3>
-            </div>
-            <div className="about-info">
+            </motion.div>
+            <motion.div
+              whileInView={{ x: [70, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="about-info"
+            >
               <h1>Biz haqimizda</h1>
-              <p>
+              <motion.p
+                whileInView={{ x: [70, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+              >
                 {" "}
                 “UIC Group” kompaniyasi O'zbekistondagi istalgan murakkablikdagi
                 IT olamining barcha jabhalarida oʻz xizmatlarini taklif qiladi.
@@ -85,9 +101,13 @@ const About = () => {
                 Kompaniyamiz mijozlarni shunchaki mijoz emas, ularga bir umrlik
                 hamkor sifatida eng yaxshi takliflar bilan xizmat ko'rsatishga
                 tayyor!
-              </p>
-            </div>
-            <div className="why-us">
+              </motion.p>
+            </motion.div>
+            <motion.div
+              whileInView={{ x: [70, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              className="why-us"
+            >
               <div>
                 <span>
                   <i className="bi bi-lightning-charge"></i>
@@ -104,8 +124,13 @@ const About = () => {
                   Takrorlanmas <br /> loyihalar
                 </span>
               </div>
-            </div>
-            <SubmitBtn link={"/"} />
+            </motion.div>
+            <motion.div
+              whileInView={{ x: [70, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.3, delay: 0.4 }}
+            >
+              <SubmitBtn link={"/"} />
+            </motion.div>
           </div>
         </div>
       </div>

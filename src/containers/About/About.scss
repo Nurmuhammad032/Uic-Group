@@ -5,8 +5,8 @@
   width: 100%;
   background-color: #1e1e20;
   padding: 8rem 0;
-  top: 39vh;
-  left: 0;
+  overflow: hidden;
+  margin-top: 39vh;
 
   .app__about-wrapper {
     position: relative;
@@ -170,6 +170,20 @@
         color: #fff;
         font-size: 1.5rem;
         margin-left: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 100%;
+
+      > div {
+        i {
+          font-size: 3rem;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
       }
     }
   }

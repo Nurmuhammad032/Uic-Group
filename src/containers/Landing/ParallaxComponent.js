@@ -13,7 +13,7 @@ export const landingParallax = () => {
   const distanceToSection = midViewport - midSection;
 
   let speedBrand = Math.min(distanceToSection, 340);
-  let speedMainBg = Math.min(distanceToSection, 230);
+  let speedMainBg = Math.min(distanceToSection, 220);
   let speedInfoWrapper = Math.min(distanceToSection, 340);
 
   const wrapper = document.querySelector(".app__landing-info");
