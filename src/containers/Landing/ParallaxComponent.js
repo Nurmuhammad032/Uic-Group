@@ -1,4 +1,4 @@
-export const landingParallax = () => {
+const landingParallax = () => {
   const landingBg = document.querySelector(".app__landing");
   const video = document.querySelector(".video-parralax");
   const mountain = document.querySelector(".landing-bg-wrapper");
@@ -31,6 +31,7 @@ export const landingParallax = () => {
     if (tag.classList.contains("brand-bg")) {
       tag.style.transform = `translateY(${speedBrand * 1.3}px)`;
     }
-
   });
 };
+
+export default landingParallax;

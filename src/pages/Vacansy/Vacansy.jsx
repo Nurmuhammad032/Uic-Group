@@ -1,20 +1,14 @@
 import "./Vacansy.scss";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import vacansyData from "../../data/data.json";
-import landingParallax from "../../containers/Landing/ParallaxComponent";
+// import landingParallax from "../../containers/Landing/ParallaxComponent";
 
 const Vacansy = () => {
   const { id } = useParams();
 
-  document.removeEventListener("scroll", landingParallax);
+  // document.removeEventListener("scroll", landingParallax);
 
   const findId = vacansyData.vacansy.data.find((job) => job.id == id);
-
-  const findIde = vacansyData.vacansy.data.forEach((job) => {
-    if (job.id === id) {
-      return true;
-    }
-  });
 
   return (
     <section className="app__vacansyPage">

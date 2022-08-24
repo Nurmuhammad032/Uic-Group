@@ -9,6 +9,7 @@ import {
   Services,
   VacancySuggest,
 } from "./containers";
+import Vacansy from "./pages/Vacansy/Vacansy";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             </>
           }
         />
+        <Route path="/vacansy/:id" element={<Vacansy />} />
       </Routes>
       <Footer />
     </Router>
