@@ -1,6 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components";
-import { About, Contact, Landing, Portfolio, Services } from "./containers";
+import { Footer, Navbar } from "./components";
+import {
+  About,
+  Contact,
+  Landing,
+  Partners,
+  Portfolio,
+  Services,
+  VacancySuggest,
+} from "./containers";
 
 function App() {
   return (
@@ -17,10 +25,13 @@ function App() {
               <Portfolio />
               <Services />
               <Contact />
+              <Partners />
+              <VacancySuggest />
             </>
           }
         />
       </Routes>
+      <Footer />
     </Router>
   );
 }

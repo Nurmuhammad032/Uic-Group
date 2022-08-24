@@ -43,3 +43,7 @@ body {
     padding: 0 2rem;
   }
 }
+
+p, h1, h3, span {
+  user-select: none;
+}

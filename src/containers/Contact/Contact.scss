@@ -1,6 +1,6 @@
 .app__contact {
+  padding: 4rem 0 0;
   position: relative;
-  // padding: 5rem 0 19rem;
   background-color: var(--green-color);
 
   .app__contact-header {
@@ -19,11 +19,15 @@
       color: #fff;
       margin-top: 1rem;
     }
+
+    @media screen and (max-width: 1000px){
+      padding: 4rem 0 14rem;
+    }
   }
 
   .app__contact-desc {
     text-align: center;
-    padding: 1rem 0 10rem;
+    padding: 1rem 0 18rem;
 
     .background-desc {
       user-select: none;
@@ -53,13 +57,22 @@
       @media screen and (min-width: 1200px) {
         font-size: 18rem;
       }
+
+      @media screen and (max-width: 1000px){
+        display: none;
+      }
     }
   }
 
-  form {
+  .form-wrapper {
     position: absolute;
-    bottom: 0;
-    left: auto;
+    bottom: -6rem;
+    left: 0;
+    width: 100%;
+    padding: inherit;
+  }
+
+  form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,14 +82,11 @@
     border-radius: 1.5rem;
     background-color: #252527;
 
-    label {
-      display: block;
-      color: #fff;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+    .form-input {
+      width: 36%;
     }
-
     span {
+      display: inline-block;
       color: #fff;
       font-size: 1.5rem;
       background-color: #141415;
@@ -85,39 +95,32 @@
       border-radius: 0.7rem 0 0 0.7rem;
     }
 
-    // Second input border fix
-    .form-input:nth-child(2) {
-      input {
-        border-radius: 0;
-        border-radius: 0 0.7rem 0.7rem 0;
-      }
-    }
-
-    input {
-      width: 40rem;
-      background-color: #141415;
-      border: none;
-      padding: 1.5rem;
-      border-radius: 0.7rem;
-      color: #fff;
-      font-size: 1.5rem;
-
-      &::placeholder {
-        font-size: 1.5rem;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-    button{
+    button {
       font-size: 1.7rem;
       padding: 2rem;
       color: #fff;
       background-color: var(--green-color);
       border: none;
       border-radius: 1.4rem;
-    } 
-  }
+    }
 
+    input:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: block;
+
+      .form-input {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.4rem;
+      }
+    }
+  }
 }
