@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   
   return (
-    <section className="app__service">
+    <section className="app__service" id="services">
       <div className="container">
         <div className="app__service-header">
           <div className="app__service-headline">

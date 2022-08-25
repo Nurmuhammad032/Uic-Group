@@ -9,9 +9,10 @@ import {
   Services,
   VacancySuggest,
 } from "./containers";
-import Vacansy from "./pages/Vacansy/Vacansy";
+import { Vacansy, PortfolioPage, MainPortfolio, NotFound } from "./pages";
 
 function App() {
+
   return (
     <Router>
       <Navbar />
@@ -32,6 +33,10 @@ function App() {
           }
         />
         <Route path="/vacansy/:id" element={<Vacansy />} />
+        <Route exact path="/portfolio" element={<MainPortfolio />} />
+        <Route path="/portfolio/:type" element={<PortfolioPage />} />
+        <Route path="*" element={<NotFound />} />
+        {/* <Route path="/portfolio/:type" element={<PortfolioComponent data={portolioData.portfolio.data} />} /> */}
       </Routes>
       <Footer />
     </Router>

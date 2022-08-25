@@ -18,7 +18,7 @@ const Landing = () => {
   }, [showModal]);
 
   return (
-    <div className="app__landing">
+    <section className="app__landing">
       <div className="landing-bg main-bg">
         <img src={images.mainBg} alt="landing bg-img" />
       </div>
@@ -92,7 +92,7 @@ const Landing = () => {
           </motion.div>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

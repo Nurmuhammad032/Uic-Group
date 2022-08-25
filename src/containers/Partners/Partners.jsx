@@ -4,7 +4,7 @@ import partnerData from "../../data/data.json";
 
 const Partners = () => {
   return (
-    <div className="app__partners">
+    <section className="app__partners">
       <div className="container">
         <div className="app__partners-header">
           <span>hamkorlar</span>
@@ -17,6 +17,7 @@ const Partners = () => {
               transition={{ duration: 0.3 }}
               href={partner.url}
               target="_blank"
+              rel="noreferrer"
               key={i}
             >
               <img src={partner.imgUrl} alt="partner-img" />
@@ -24,7 +25,7 @@ const Partners = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

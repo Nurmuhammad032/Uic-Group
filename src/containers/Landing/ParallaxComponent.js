@@ -1,7 +1,6 @@
 const landingParallax = () => {
   const landingBg = document.querySelector(".app__landing");
   const video = document.querySelector(".video-parralax");
-  const mountain = document.querySelector(".landing-bg-wrapper");
 
   const topViewport = window.pageYOffset;
 
@@ -12,6 +11,7 @@ const landingParallax = () => {
 
   const distanceToSection = midViewport - midSection;
 
+  // following codes to stop parrallax items when they'll reach enough amount
   let speedBrand = Math.min(distanceToSection, 340);
   let speedMainBg = Math.min(distanceToSection, 220);
   let speedInfoWrapper = Math.min(distanceToSection, 340);

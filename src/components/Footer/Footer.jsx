@@ -1,11 +1,12 @@
 import "./Footer.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <Link to={"/"} className="footer-brand phone-variant">
+        <NavLink to={"/"} className="footer-brand phone-variant">
           <img
             src="	https://uic.group/img/logo/footer-logo.svg"
             alt="footer-brand-img"
@@ -14,22 +15,25 @@ const Footer = () => {
             <h1>UIC</h1>
             <span>Group</span>
           </div>
-        </Link>
+        </NavLink>
         <ul className="footer-links">
           <li>
-            <a href="#">kompaniya</a>
+            <Link to="about" spy={true} offset={-90} duration={800}>
+              kompaniya
+            </Link>
           </li>
           <li>
-            <a href="#">xizmatlar</a>
+            <Link to="services" spy={true} offset={-90} duration={800}>
+              xizmatlar
+            </Link>
           </li>
           <li>
-            <a href="#">portfolio</a>
+            <NavLink to="/portfolio">portfolio</NavLink>
           </li>
           <li>
-            <a href="#">vakansiya</a>
-          </li>
-          <li>
-            <a href="#">blog</a>
+            <Link to="vacansy" spy={true} offset={-90} duration={800}>
+              vakansiya
+            </Link>
           </li>
         </ul>
 
@@ -38,6 +42,7 @@ const Footer = () => {
             className="footer-social"
             href="https://www.facebook.com/uicgroup.org"
             target={"_blank"}
+            rel='noreferrer'
           >
             <i className="bi bi-facebook"></i>
           </a>
@@ -45,6 +50,7 @@ const Footer = () => {
             className="footer-social"
             href="https://twitter.com/UIC_Group"
             target={"_blank"}
+            rel='noreferrer'
           >
             <i className="bi bi-twitter"></i>
           </a>
@@ -52,6 +58,7 @@ const Footer = () => {
             className="footer-social"
             href="https://www.instagram.com/uic.group"
             target={"_blank"}
+            rel='noreferrer'
           >
             <i className="bi bi-instagram"></i>
           </a>
@@ -59,6 +66,7 @@ const Footer = () => {
             className="footer-social"
             href="https://t.me/uicgroup"
             target={"_blank"}
+            rel='noreferrer'
           >
             <i className="bi bi-telegram"></i>
           </a>
@@ -72,18 +80,19 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <span className="footer-copyright">UIC Group © 2022</span>
-          <Link to={"/"} className="footer-brand">
+          <NavLink to={"/"} className="footer-brand">
             <img
-              src="	https://uic.group/img/logo/footer-logo.svg"
+              src="https://uic.group/img/logo/footer-logo.svg"
               alt="footer-brand-img"
             />
             <div className="brand-text">
               <h1>UIC</h1>
               <span>Group</span>
             </div>
-          </Link>
+          </NavLink>
           <div className="footer-map">
-            <a href="https://yandex.com/maps/-/CCU4ELbzSD" target={"_blank"}>
+            <a href="https://yandex.com/maps/-/CCU4ELbzSD" target={"_blank"}
+            rel='noreferrer'>
               Toshkent sh, Mirobod t, Aybeka 26
               <span>xaritada</span>
             </a>

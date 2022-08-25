@@ -1,6 +1,7 @@
 import "./Portfolio.scss";
 import { PortfolioComponent } from "../../components";
 import porfolioData from "../../data/data.json";
+import { NavLink } from "react-router-dom";
 
 const data = [];
 
@@ -21,13 +22,13 @@ const Portfolio = () => {
           <h1>Portfolio</h1>
           <ul>
             <li>
-              <a href="#">mobil ilovalar</a>
+              <NavLink to="/portfolio/mobile-program">mobil ilovalar</NavLink>
             </li>
             <li>
-              <a href="#">veb-saytlar</a>
+              <NavLink to="/portfolio/web-site">veb-saytlar</NavLink>
             </li>
             <li>
-              <a href="#">brending</a>
+              <NavLink to="/portfolio/brend">brending</NavLink>
             </li>
           </ul>
         </div>

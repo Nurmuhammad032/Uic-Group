@@ -1,9 +1,10 @@
 import "./VacancySuggest.scss";
 import vacansyData from "../../data/data.json";
+import { Link } from "react-router-dom";
 
 const VacancySuggest = () => {
   return (
-    <div className="app__vacansy-suggest">
+    <section className="app__vacansy-suggest" id="vacansy">
       <div className="container">
         <div className="app__vacansy-wrapper">
           <div className="app__vacansy-info">
@@ -18,14 +19,16 @@ const VacancySuggest = () => {
               {vacansyData.vacansy.data.map((vacansy, i) => (
                 <li key={vacansy.id}>
                   <span></span>
-                  <a href={`vacansy${vacansy.id}`}>{vacansy.inviteType}</a>
+                  <Link to={`/vacansy/${vacansy.id}`}>
+                    {vacansy.inviteType}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

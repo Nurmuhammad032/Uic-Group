@@ -28,7 +28,7 @@ const About = () => {
   }, [firstViewSlider, secondViewSlider]);
 
   return (
-    <div className="app__about">
+    <section className="app__about" id="about">
       <AboutImgs images={imgFirst} view={firstViewSlider} />
       <AboutImgs images={imgSecond} view={secondViewSlider} />
       <div
@@ -134,7 +134,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -11,6 +11,7 @@ const PortfolioComponent = ({ data }) => {
             transition={{duration: 0.3}}
             href={item.url}
             target="_blank"
+            rel='noreferrer'
             key={i}
             className={`portfolio__items-wrap ${
               item.layoutBig ? "items__wrap-big" : ""

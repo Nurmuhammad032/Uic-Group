@@ -20,6 +20,7 @@
       text-align: center;
       margin-top: 1.3rem;
       position: relative;
+      cursor: pointer;
       a {
         letter-spacing: 0.1rem;
         font-size: 1.6rem;
@@ -29,25 +30,35 @@
         &:hover {
           color: var(--green-color);
         }
-      }
 
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        opacity: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 3.5rem;
-        height: 0.2rem;
-        border-radius: 2rem;
-        background-color: var(--gray-color);
-        transition: all 0.2s ease;
-      }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          opacity: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 3.5rem;
+          height: 0.2rem;
+          border-radius: 2rem;
+          background-color: var(--gray-color);
+          transition: all 0.2s ease;
+        }
 
-      &:hover::before {
-        opacity: 1;
-        bottom: -0.5rem;
+        &:hover::before {
+          opacity: 1;
+          bottom: -0.5rem;
+        }
+
+        &.activeLink,
+        &.active {
+          color: var(--green-color);
+
+          &::before {
+            opacity: 1;
+            bottom: -0.5rem;
+          }
+        }
       }
     }
   }
