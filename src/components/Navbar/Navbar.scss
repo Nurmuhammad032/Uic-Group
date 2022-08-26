@@ -126,6 +126,10 @@
       margin-left: 1rem;
     }
 
+    .selected-lan {
+      color: #fff;
+    }
+
     .activeLan {
       color: #000;
     }
@@ -135,9 +139,6 @@
       text-transform: uppercase;
 
       &:hover {
-        color: #fff;
-      }
-      &:nth-child(1) {
         color: #fff;
       }
     }

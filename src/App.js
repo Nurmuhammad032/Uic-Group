@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar, Loading } from "./components";
 import {
   About,
   Contact,
@@ -11,11 +11,18 @@ import {
 } from "./containers";
 import { Vacansy, PortfolioPage, MainPortfolio, NotFound } from "./pages";
 
-function App() {
+window.onload = () => {
+  setTimeout(() => {
+    document.querySelector("body").classList.add("display");
+  }, 4000);
+};
 
+
+function App() {
   return (
     <Router>
       <Navbar />
+      <Loading />
 
       <Routes>
         <Route

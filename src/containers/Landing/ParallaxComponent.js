@@ -1,3 +1,4 @@
+// Let's work with dom
 const landingParallax = () => {
   const landingBg = document.querySelector(".app__landing");
   const video = document.querySelector(".video-parralax");

@@ -78,6 +78,7 @@
 
     .app__landing-info {
       position: relative;
+
       h1 {
         color: #fff;
         font-size: 4.1rem;
@@ -125,7 +126,7 @@
   
   .play-video{
     position: absolute;
-    bottom: 18%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;

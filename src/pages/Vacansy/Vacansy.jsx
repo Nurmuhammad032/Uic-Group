@@ -34,6 +34,9 @@ const Vacansy = () => {
               <p>{findId.hour}</p>
             </div>
           </div>
+          <div className="salary">
+            <span> <i className="bi bi-wallet2"></i> {findId.salary}</span>
+          </div>
         </div>
 
         <div className="app__vacansy-requirements">

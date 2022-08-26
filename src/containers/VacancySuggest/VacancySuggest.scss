@@ -1,7 +1,7 @@
 .app__vacansy-suggest {
   width: 100%;
   background-color: #1e1e20;
-  padding: 12rem 0 0;
+  padding: 12rem 0 1rem;
 
   .app__vacansy-wrapper {
     display: flex;
@@ -21,7 +21,7 @@
           font-size: 3.5rem;
         }
         @media screen and (max-width: 576px) {
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
       }
 

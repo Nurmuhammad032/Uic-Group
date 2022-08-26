@@ -4,9 +4,17 @@ import { images } from "../../constants";
 import landingParallax from "./ParallaxComponent";
 import { motion } from "framer-motion";
 import { SubmitBtn } from "../../components";
+import { useMediaPredicate } from "react-media-hook";
 
 const Landing = () => {
-  document.addEventListener("scroll", landingParallax);
+  // Parallax shouldn't work max 768px
+  const responsiveMax768 = useMediaPredicate("(max-width: 768px)");
+
+  if (!responsiveMax768) {
+    document.addEventListener("scroll", landingParallax);
+  }
+  // console.log(responsiveMax768);
+
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {

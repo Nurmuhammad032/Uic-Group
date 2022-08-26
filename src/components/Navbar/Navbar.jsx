@@ -140,7 +140,7 @@ const Navbar = () => {
               </div>
               <div className="hidden-languages">
                 {hover && <p className="choose-language">Tilni tanlang: </p>}
-                <p>Uz</p>
+                <p className="selected-lan">Uz</p>
                 <>
                   <p className={hover ? "view-lan" : "hidden-lan"}>ru</p>
                   <p className={hover ? "view-lan" : "hidden-lan"}>en</p>
