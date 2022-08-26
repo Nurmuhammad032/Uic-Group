@@ -106,8 +106,16 @@
     width: 7rem;
     border: 1px solid var(--gray-color);
     border-radius: 0.5rem;
+    transition: width 0.2s linear;
+    
+    
+    &.langLarge{
+      width: 23rem;
 
-    transition: all 0.2s linear;
+      @media screen and (max-width: 567px) {
+        width: 15rem;
+      }
+    }
 
     i {
       font-size: 1.8rem;
@@ -173,6 +181,10 @@
       font-size: 1.3rem;
       width: max-content;
       color: var(--gray-color);
+
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
     }
   }
 

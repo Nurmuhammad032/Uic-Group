@@ -114,12 +114,9 @@ const Navbar = () => {
           </div>
           <div>
             <div
-              className="app__navbar-languages"
+              className={`app__navbar-languages ${hover ? 'langLarge' : ''}`}
               onMouseOver={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
-              style={{
-                width: `${hover ? "23rem" : "7rem"}`,
-              }}
             >
               <div className="global-link">
                 <svg
